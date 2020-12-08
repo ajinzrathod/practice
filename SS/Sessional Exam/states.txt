@@ -1,0 +1,7 @@
+States	a	b	c	d
+Start	A	-	-	-
+A	-	-	B	B
+B	-	C	-	-
+C	-	D	-	-
+D	-	A	-	E
+E	-	-	-	E

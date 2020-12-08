@@ -1,0 +1,18 @@
+without join:
++---+---+------------------                     main-thread
+    |   |
+    |   +...........                            child-thread(short)
+    +..................................         child-thread(long)
+
+with join
++---+---+------------------***********+###      main-thread
+    |   |                             |
+    |   +...........join()            |         child-thread(short)
+    +......................join()......         child-thread(long)
+
+with join and daemon thread
++-+--+---+------------------***********+###     parent-thread
+  |  |   |                             |
+  |  |   +...........join()            |        child-thread(short)
+  |  +......................join()......        child-thread(long)
+  +,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,     child-thread(long + daemonized)
