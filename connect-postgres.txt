@@ -1,0 +1,21 @@
+to connect to postgres
+
+ajinkya@lenovo:~ sudo -u postgres -i
+
+postgres@lenovo:~$ psql
+
+postgres=# \connect djaley
+OR
+postgres=# \c djaley
+
+djaley=# select * from article_article;
+
+
+if unablt to delete postgres database,
+postgres=# REVOKE CONNECT ON DATABASE djaley FROM public;
+REVOKE
+
+postgres=# ALTER DATABASE djaley WITH ALLOW_CONNECTIONS false;
+ALTER DATABASE
+
+then refresh the page and delete it

@@ -7,7 +7,7 @@ class DB {
     static final String uname = "root";
     static final String pass = "google";
 
-    // String url = "jdbc:mysql://localhost:8080/aj";
+    // String url = "jdbc:mysql://localhost:3306/aj";
     // String uname = "root";
     // String pass = "password";
 
